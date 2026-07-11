@@ -1,0 +1,48 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+terraform.tfvars
+*.auto.tfvars
+.terraform/
+.terraform.lock.hcl
+
+# Lambda
+*.zip
+lambda/__pycache__/
+lambda/boto3/
+lambda/boto3-*/
+lambda/botocore/
+lambda/botocore-*/
+lambda/pymysql/
+lambda/PyMySQL-*/
+lambda/dateutil/
+lambda/python_dateutil-*/
+lambda/jmespath/
+lambda/jmespath-*/
+lambda/s3transfer/
+lambda/s3transfer-*/
+lambda/six-*/
+lambda/urllib3/
+lambda/urllib3-*/
+lambda/bin/
+
+# AWS
+*.pem
+*.key
+
+# VM Import
+*.ova
+*.ovf
+*.vmdk
+ami-ids.txt
+trust-policy.json
+role-policy.json
+*-containers.json
+
+# Response files
+response.json
+
+# Kiro AI
+.kiro/sessions/
+.kiro/cache/

@@ -1,0 +1,23 @@
+# AWS 리전
+aws_region = "ap-northeast-2"
+
+# 프로젝트 이름 (모든 리소스의 prefix로 사용)
+project_name = "db-failover"
+
+# VM Import에서 생성된 AMI ID
+# VM을 AMI로 변환 후 각 AMI ID를 입력하세요
+web_ami_id      = "ami-xxxxxxxxxxxxxxxxx"  # Web (Nginx)
+was_ami_id      = "ami-xxxxxxxxxxxxxxxxx"  # WAS (Flask)
+proxysql_ami_id = "ami-xxxxxxxxxxxxxxxxx"  # ProxySQL
+mysql_ami_id    = "ami-xxxxxxxxxxxxxxxxx"  # MySQL (DB1)
+
+# 데이터베이스 자격 증명
+db_username = "admin"
+db_password = "YOUR_STRONG_PASSWORD_HERE" 
+repl_password = "YOUR_REPLICATION_PASSWORD_HERE"  # MySQL 복제 사용자 비밀번호
+
+notification_email = "your-email@example.com"
+
+enable_domain = false
+domain_name   = "example.com"
+subdomain     = "db-failover"  # subdomain.example.com으로 접속
