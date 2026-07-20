@@ -23,6 +23,7 @@ lambda/jmespath-*/
 lambda/s3transfer/
 lambda/s3transfer-*/
 lambda/six-*/
+lambda/six.py
 lambda/urllib3/
 lambda/urllib3-*/
 lambda/bin/
@@ -44,5 +45,4 @@ role-policy.json
 response.json
 
 # Kiro AI
-.kiro/sessions/
-.kiro/cache/
+.kiro/
