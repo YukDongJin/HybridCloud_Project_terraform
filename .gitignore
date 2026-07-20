@@ -46,3 +46,6 @@ response.json
 
 # Kiro AI
 .kiro/
+
+# Documentation
+docs/
