@@ -32,7 +32,7 @@
 2. **3단계 Failover 체인**: EC2 DB1 → RDS1 → RDS2
 3. **자동 Rollback**: EC2 DB1 복구 시 자동으로 Master 역할 복귀
 4. **CloudWatch 모니터링**: 실시간 DB 상태 및 복제 지연 모니터링
-5. **Lambda 자동화**: 무인 Failover/Rollback 실행
+5. **Lambda 자동화**: 자동 Failover/Rollback 실행
 
 ## 문제 해결
 
@@ -41,19 +41,6 @@
 - IAM 역할 권한 확인
 - S3 버킷 리전 확인
 
-### Terraform 오류
-- AMI ID가 올바른지 확인
-- AWS 자격 증명 확인 (`aws configure`)
-- 리전 설정 확인
-
 ### MySQL 복제 오류
 - 네트워크 연결 확인
-- 방화벽 규칙 확인 (포트 3306)
 - GTID 설정 확인
-
-## 참고 문서
-
-- [AWS VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html)
-- [ProxySQL Documentation](https://proxysql.com/documentation/)
-- [MySQL GTID Replication](https://dev.mysql.com/doc/refman/8.0/en/replication-gtids.html)
-- [AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)
